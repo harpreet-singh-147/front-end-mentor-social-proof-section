@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
 
 :root {
-  /* Primary */
   --very-dark-magenta: hsl(300, 43%, 22%);
   --soft--iink: hsl(333, 80%, 67%);
 
-  /* Neutral */
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
@@ -46,9 +44,6 @@ body::before {
 }
 
 .main {
-  /* width: 100%;
-  height: 100%;
-  margin: 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,16 +103,16 @@ body::before {
   width: 100%;
 }
 
-.testimonials__rating-one {
+.testimonials__rating-0 {
   align-self: flex-start;
   margin-left: 1rem;
 }
 
-.testimonials__rating-two {
+.testimonials__rating-1 {
   margin-left: -0.2rem;
 }
 
-.testimonials__rating-three {
+.testimonials__rating-2 {
   align-self: flex-end;
   margin-right: 1.2em;
 }
@@ -207,41 +202,31 @@ body::before {
   color: var(--light-grayish-magenta);
 }
 
-.first_card {
+.testimonials__first-card {
   align-self: flex-start;
 }
 
-.third__card {
+.testimonials__third-card {
   align-self: flex-end;
 }
 
-/* body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 10000;
-  background-image: url('../design/desktop-design.jpg');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-} */
-
 .attribution {
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: inherit;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--soft--iink);
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1385px) {
@@ -353,11 +338,11 @@ body::before {
     grid-template-columns: 1fr 1fr;
   }
 
-  .first_card {
+  .testimonials__first-card {
     align-self: center;
   }
 
-  .third__card {
+  .testimonials__third-card {
     align-self: center;
     grid-column: 1 / -1;
     width: 70%;
@@ -389,13 +374,13 @@ body::before {
     gap: 1.2rem;
   }
 
-  .testimonials__rating-one {
+  .testimonials__rating-0 {
     align-self: center;
     margin-left: 0;
     padding-right: 4.5rem;
   }
 
-  .testimonials__rating-three {
+  .testimonials__rating-2 {
     align-self: center;
     margin-right: 0;
     padding-right: 4rem;
@@ -451,7 +436,7 @@ body::before {
     margin: 0 auto;
   }
 
-  .third__card {
+  .testimonials__third-card {
     width: 100%;
   }
 }
@@ -464,11 +449,11 @@ body::before {
     flex-direction: column;
   }
 
-  .testimonials__rating-one {
+  .testimonials__rating-0 {
     padding-right: 0;
   }
 
-  .testimonials__rating-three {
+  .testimonials__rating-2 {
     padding-right: 0;
   }
 
