@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   font-family: var(--primary-font);
   display: flex;
@@ -212,7 +212,7 @@ body::before {
 
 .attribution {
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.3rem;
@@ -305,7 +305,7 @@ body::before {
     left: auto;
     transform: none;
     margin-top: auto;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
     align-self: center;
     width: 100%;
   }
